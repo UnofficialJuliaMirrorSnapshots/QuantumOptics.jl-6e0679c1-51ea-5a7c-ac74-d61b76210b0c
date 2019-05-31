@@ -66,6 +66,9 @@ module timeevolution
     include("master.jl")
     include("schroedinger.jl")
     include("mcwf.jl")
+    include("bloch_redfield_master.jl")
+
+    using .timeevolution_bloch_redfield_master
     using .timeevolution_master
     using .timeevolution_schroedinger
     using .timeevolution_mcwf
