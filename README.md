@@ -9,10 +9,8 @@
 More information, documentation and examples can be found on our website http://qojulia.org.
 
 
-### Development status
-
 **Latest release:**
-  * [![Status of latest release on julia 0.6][pkg-0.6-img]][pkg-0.6-url]
+  * Version: [![Latest version tag][version-img]][version-url]
   * Test coverage:
         [![Test coverage status on coveralls][coveralls-img]][coveralls-url]
         [![Test coverage status on codecov][codecov-img]][codecov-url]
@@ -20,7 +18,7 @@ More information, documentation and examples can be found on our website http://
 
 ### Project structure
 
-The content associated with **QuantumOptics.jl** is distributed over several repositories under the [qojulia] organization on github:
+The source content associated with **QuantumOptics.jl** is distributed over several repositories under the [qojulia] organization on github:
 
 * The main code: https://github.com/qojulia/QuantumOptics.jl
 * Documentation: https://github.com/qojulia/QuantumOptics.jl-documentation
@@ -62,3 +60,6 @@ If you like **QuantumOptics.jl**, we would appreciate it if you starred the repo
 
 [docs-url]: https://qojulia.org/documentation/
 [docs-img]: https://img.shields.io/badge/docs-stable-blue.svg
+
+[version-url]: https://github.com/qojulia/QuantumOptics.jl/releases
+[version-img]: https://img.shields.io/github/release/qojulia/QuantumOptics.jl.svg
