@@ -1,6 +1,6 @@
 name = "QuantumOptics"
 uuid = "6e0679c1-51ea-5a7c-ac74-d61b76210b0c"
-version = "v0.6.5"
+version = "v0.6.6"
 
 [deps]
 Arpack = "7d9fca2a-8960-54d3-9f78-7d1dccf2cb97"
@@ -21,3 +21,12 @@ RecursiveArrayTools = "≥ 0.20.0"
 StochasticDiffEq = "≥ 6.0.0"
 WignerSymbols = "≥ 0.3.1"
 julia = "≥ 1.1.0"
+
+[extras]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["LinearAlgebra", "SparseArrays", "Random", "Test"]
