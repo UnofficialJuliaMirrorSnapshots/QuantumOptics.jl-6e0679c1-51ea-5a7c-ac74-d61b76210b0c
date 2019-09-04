@@ -102,6 +102,7 @@ type_len = length("Complex{Float64}")
 op_data_str1 = split(sprint(show, op_data)[type_len+2:end-1], ";")
 for i=1:length(op_data_str1)
     op_data_str1[i] = join(split(op_data_str1[i]), "  ")
+    op_data_str1[i] = replace(op_data_str1[i], "  +  "=>"+")
 end
 op_data_str = join(op_data_str1, "\n ")
 @test sprint(show, op) == "DenseOperator(dim=12x12)

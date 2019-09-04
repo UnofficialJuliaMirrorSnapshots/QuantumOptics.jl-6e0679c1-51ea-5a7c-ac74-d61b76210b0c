@@ -461,7 +461,8 @@ function showsparsearray_stdord(io::IO, S::SparseMatrixCSC, ldims::Vector, rdims
     else
         half_screen_rows = typemax(Int)
     end
-    pad = ndigits(max(S.m,S.n))
+    # pad = ndigits(max(S.m,S.n))
+    pad = ndigits(maximum(S.rowval))
     sep = "\n  "
     if !haskey(io, :compact) && length(axes(S, 2)) > 1
         io = IOContext(io, :compact => true)
