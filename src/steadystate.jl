@@ -1,6 +1,6 @@
 module steadystate
 
-using ..states, ..operators, ..operators_dense, ..superoperators, ..bases
+using QuantumOpticsBase
 using ..timeevolution
 using Arpack, LinearAlgebra
 
